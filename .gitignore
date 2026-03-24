@@ -1,0 +1,31 @@
+# Environment & secrets - NEVER commit these
+.env
+*.env
+
+# Database - contains your business data
+database/sales.db
+database/*.db
+
+# Auth - contains password hashes
+auth/users.json
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# macOS
+.DS_Store
+
+# Streamlit cache
+.streamlit/
+
+# Logs
+*.log
+
+# Old/backup files
+*_old.py
+*_backup.py

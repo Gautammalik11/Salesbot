@@ -41,7 +41,7 @@ class QueryEngine:
         from langchain_core.prompts import PromptTemplate
 
         custom_prompt = PromptTemplate.from_template("""
-You are a SQL expert. Create a syntactically correct SQLite query based on the question.
+You are a SQL expert. Create a syntactically correct SQL query based on the question. Use standard SQL compatible with both SQLite and PostgreSQL.
 
 CRITICAL RULES:
 1. When asked about a CUSTOMER (by name or info request), ALWAYS query BOTH 'sales' AND 'quotations' tables using UNION ALL

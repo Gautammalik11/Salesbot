@@ -68,6 +68,9 @@ class Settings:
         Returns:
             Database URL string
         """
+        database_url = os.getenv("DATABASE_URL", "")
+        if database_url:
+            return database_url
         return f"sqlite:///{cls.DATABASE_PATH}"
 
 
